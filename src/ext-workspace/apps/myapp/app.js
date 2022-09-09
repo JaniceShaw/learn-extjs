@@ -11,7 +11,7 @@ Ext.application({
         // This will automatically load all classes in the MyApp namespace
         // so that application classes do not need to require each other.
         'MyApp.*',
-        'Base.*'
+        //'Base.*'
     ],
 
     // The name of the initial view to create.

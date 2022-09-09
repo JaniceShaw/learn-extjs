@@ -30,7 +30,7 @@ You need to have the newer version in a folder [ext-77] for example (so need old
 
 - sencha app upgrade ./ext-77 ([ext-77] in where the new version is)
 
------
+---
 
 # Make a package
 
@@ -44,7 +44,31 @@ You need to have the newer version in a folder [ext-77] for example (so need old
 
 .* makes all files available to all the applications - only use with .* with Base. Other way would be to: in a view file in requires add 'Base.view.Something'
 
------
+---
+# About app.js and create view
+
+- generate some json at http://json-generator.com/
+```
+[
+  '{{repeat(500)}}',
+  {
+    _id: '{{objectId()}}',
+    index: '{{index()}}',
+    name: '{{surname()}}',
+    firstname: '{{firstName()}}',
+    gender: '{{gender()}}',
+    dob: '{{date(new Date(1970, 0, 1), new Date(), "dd.MM.YYYY")}}',
+    city: '{{integer(1000, 9999)}} {{city()}}',
+    street: ' {{street()}} {{integer(1, 500)}},',
+    company: '{{company().toUpperCase()}}',
+    email: '{{email()}}',
+    phone: '{{phone()}}',
+    country: '{{country()}}'
+  }
+]
+```
+
+
 
 
 

@@ -4,7 +4,8 @@
      */
     "apps": [
         "apps/myapp",
-        "apps/secondapplication"
+        "apps/secondapplication",
+        "apps/phonebook"
     ],
 
     /**
