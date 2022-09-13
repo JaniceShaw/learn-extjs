@@ -67,6 +67,9 @@ You need to have the newer version in a folder [ext-77] for example (so need old
   }
 ]
 ```
+---
+
+![alt text](./img/about-architecture.png "About the architecture")
 
 
 
